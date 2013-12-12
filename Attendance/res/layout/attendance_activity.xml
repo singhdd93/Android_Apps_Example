@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60sp"
+                android:gravity="center_horizontal"
+                android:text="@string/top_header"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#81DAF5"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/captureFront"
+                    style="@style/ButtonText"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_button"
+                    android:drawableRight="@drawable/in"
+                    android:onClick="in"
+                    android:text="@string/in_btn_txt" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/office_building" />
+
+                <Button
+                    android:id="@+id/button1"
+                    style="@style/ButtonText"
+                    android:layout_width="100sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_button"
+                    android:drawableLeft="@drawable/in"
+                    android:onClick="out"
+                    android:text="@string/out_btn_txt" />
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/ButtonText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tableLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/red_button"
+        android:drawableLeft="@drawable/absent"
+        android:gravity="center"
+        android:onClick="absent"
+        android:text=" Mark Absent" />
+
+</RelativeLayout>

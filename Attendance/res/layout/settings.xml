@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editTextIP"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/gradientbg"
+        android:ems="10"
+        android:hint="IP (eg. 61.8.158.157)"
+        android:digits="0123456789."
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Server settings"
+        android:textColor="#81DAF5"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextPort"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextIP"
+        android:layout_below="@+id/editTextIP"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/gradientbg"
+        android:ems="10"
+        android:hint="Port (eg. 69)"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/blue_button"
+        android:onClick="saveSetings"
+        android:text="Save"
+        android:layout_below="@+id/editTextPort"
+        android:layout_marginTop="10sp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
