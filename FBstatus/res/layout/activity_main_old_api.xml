@@ -1,0 +1,111 @@
+<android.support.v4.widget.DrawerLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:id="@+id/drawer1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:background="@drawable/mainbackground">
+    	
+<LinearLayout  
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content" 
+    	android:orientation="vertical"
+    	>
+    	<LinearLayout 
+        android:id="@+id/actionBar_old_api"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/topbg_02"
+        android:orientation="horizontal">
+        <Button 
+            android:id="@+id/toggle_navigation_drawer_old_api"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/menuicon_03"
+            android:layout_marginLeft="5dp"
+            android:text=""
+            android:layout_gravity="center"/>
+        <TextView 
+            android:id="@+id/titleView_old_api"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="24sp"
+            android:paddingLeft="20dp"/>
+        <ProgressBar 
+            android:id="@+id/progress_bar_old_api"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"/>
+        <Button 
+            android:id="@+id/refresh_bat_old_api"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/refresh"/>
+    </LinearLayout>
+    <EditText 
+    	    android:id="@+id/search_bar_old"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:textColor="#ffffff"
+    	    android:hint="Search..."
+    	    android:background="@drawable/mainbackground"
+    	    android:inputType="textVisiblePassword"/>
+    	<TextView 
+    	    android:id="@+id/display_Category_main"
+    	    android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:textStyle="bold"
+        	android:textSize="22sp"
+        	android:textColor="#ffffff"
+        	android:text="All"
+        	android:gravity="center"
+    	    />
+
+      <ListView
+        android:id="@+id/listView_messgaes"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:dividerHeight="2dp"
+        android:layout_weight="1.0"
+        android:divider="#bbbdc3"
+         />
+    <com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="a151d6bcc466570"
+                         ads:adSize="BANNER"
+                         ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID"
+                         ads:loadAdOnCreate="true"/>
+    
+    
+</LinearLayout>
+
+    </FrameLayout>
+    
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="#212121"
+        android:dividerHeight="1dp"
+        />
+    
+    
+    
+    
+    </android.support.v4.widget.DrawerLayout>
+    

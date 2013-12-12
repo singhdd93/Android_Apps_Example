@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="horizontal" 
+    android:background="@drawable/sidebarbg_03">
+    
+    <TextView 
+        android:id="@+id/drawer_display_category"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_weight="1.0"
+        android:gravity="left|center_vertical"
+        android:fontFamily="bebas.ttf"
+        android:textColor="#ffffff"
+        android:layout_marginRight="10dp"
+        />
+    <TextView 
+        android:id="@+id/drawer_display_category_count"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:text="100"
+        android:gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="right"
+        android:fontFamily="bebas.ttf"
+        android:textColor="#ffffff"/>
+
+</LinearLayout>

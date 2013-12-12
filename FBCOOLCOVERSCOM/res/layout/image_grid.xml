@@ -1,0 +1,39 @@
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:background="@drawable/mainbackground"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#ffffff"
+        android:hint="Type to Search..."
+        android:textSize="@dimen/searchTextSize"/>
+    
+    <GridView
+    android:layout_marginTop="3dp"
+    android:id="@+id/gridview"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:verticalSpacing="2dp"
+    android:numColumns="1"
+    android:stretchMode="columnWidth"
+   
+ />
+    <com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="a151e93cc53531e"
+                         ads:adSize="SMART_BANNER"
+                         android:layout_gravity="center_horizontal"
+                         ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID"
+                         ads:loadAdOnCreate="true"/>
+    
+</LinearLayout>

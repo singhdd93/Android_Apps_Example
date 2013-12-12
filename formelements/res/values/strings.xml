@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">formelements</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="eng">English</string>
+    <string name="hindi">Hindi</string>
+    <string name="tab">Tablets</string>
+    <string name="mob">Mobiles</string>
+    <string name="com">Computers</string>
+    
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="ddstheme" parent="Theme.Sherlock.Light.DarkActionBar">
+        <!-- API 11 theme customizations can go here. -->
+        <item name="android:homeAsUpIndicator">@drawable/ddd</item>
+    <item name="homeAsUpIndicator">@drawable/ddd</item>
+    </style>
+
+</resources>
