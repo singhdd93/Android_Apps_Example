@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="Welcome to Record Viewer"
+        android:textColor="#FB2D41"
+        android:textSize="25sp" />
+    <TextView 
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What do you want to do ?"
+        android:textSize="20sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView 
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select one from below"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/createF1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Create Record" 
+        android:layout_marginTop="25dp"
+        android:textSize="18sp"/>
+    
+    <Button
+        android:id="@+id/viewF1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="View Records" 
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"/>
+    
+        <Button
+        android:id="@+id/searchF1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Search Record" 
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"/>
+    
+    <Button
+        android:id="@+id/editF1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Edit Record" 
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"/>
+    <Button
+        android:id="@+id/deleteF1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Delete Record" 
+        android:layout_marginTop="15dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>

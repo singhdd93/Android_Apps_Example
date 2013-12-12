@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">register</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="register">Register</string>
+    <string name="email">E-mail</string>
+    <string name="Remail">Required E-mail</string>
+    <string name="passwrd">Password</string>
+    <string name="REpassword">Retype Password</string>
+    <string name="agreets">I agree to Terms and Conditions</string>
+    <string name="name">Name</string>
+    <string name="fname">Full Name</string>
+    <string name="dob">Date of Birth</string>
+    <string name="phoneno">Phone No.</string>
+    <string name="continu">Continue</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    
+
+</resources>

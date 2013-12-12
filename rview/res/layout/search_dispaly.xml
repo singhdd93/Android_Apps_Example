@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+<TextView 
+        android:id="@+id/ted1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Results :"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"/>
+
+<GridView
+    android:id="@+id/gridView1"
+    android:layout_width="match_parent"
+    android:layout_height="327dp"
+    android:layout_marginBottom="10dp"
+    android:numColumns="4" >
+
+</GridView>
+
+<Button
+    android:id="@+id/backseadis"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:text="Back" />
+
+</LinearLayout>

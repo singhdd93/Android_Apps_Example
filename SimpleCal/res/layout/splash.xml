@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191DD7" >
+
+
+
+    <TextView
+        android:id="@+id/text1Splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:shadowColor="#EBF221"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="20"
+        android:text="Simple Cal"
+        android:textColor="#83F221"
+        android:textSize="90sp" />
+
+    <TextView
+        android:id="@+id/text2Splash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text1Splash"
+        android:layout_marginTop="40dp"
+        android:text="by   DDS(singh_dd93)"
+        android:textColor="#FFFFFF" 
+        android:gravity="right"
+        android:textSize="22sp"/>
+
+</RelativeLayout>
