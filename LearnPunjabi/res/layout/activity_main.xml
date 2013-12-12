@@ -1,0 +1,21 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    
+    <Button 
+        android:id="@+id/mool_Mantar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:text="Punjabi Numbering"/>
+    
+    <Button 
+        android:id="@+id/punjabi_Alphabets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:text="Punjabi Alphabets"/>
+    
+    </LinearLayout>

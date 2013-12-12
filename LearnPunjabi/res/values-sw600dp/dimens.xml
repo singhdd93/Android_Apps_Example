@@ -1,0 +1,16 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+    -->
+
+	<dimen name="butsize">75dp</dimen>
+    <dimen name="butmar">20dp</dimen>
+    <dimen name="marginT">0dp</dimen>
+    <dimen name="butsizesmall">65dp</dimen>
+    <dimen name="butmarsmall">16dp</dimen>
+    
+    <item name="size1" type="dimen" format="float">0.075</item>
+    
+</resources>

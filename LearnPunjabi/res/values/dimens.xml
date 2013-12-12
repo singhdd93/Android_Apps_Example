@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="butsize">55dp</dimen>
+    <dimen name="butmar">10dp</dimen>
+
+    <dimen name="butsizesmall">45dp</dimen>
+    <dimen name="butmarsmall">8dp</dimen>
+    <dimen name="marginT">20dp</dimen>
+    
+    <item name="size1" type="dimen" format="float">0.055</item>
+
+</resources>
