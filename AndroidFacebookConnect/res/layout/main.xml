@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="#f0f0f0">
+    
+    <!-- Facebook Login Button -->
+    <Button android:id="@+id/btn_fblogin"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:src="@drawable/btn_login"
+        		android:layout_marginTop="30dip"
+        		android:layout_gravity="center_horizontal"
+        		android:text="Login with Facebook"/>
+   
+    
+    <!-- Facebook Post to Wall Button -->
+    <Button android:id="@+id/btn_fb_post_to_wall"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="Post to Wall"
+        		android:layout_marginTop="30dip"
+        		android:layout_gravity="center_horizontal"
+        		android:visibility="gone"/>
+    <!-- Facebook Logout Button -->
+    <Button android:id="@+id/btn_get_profile"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:src="@drawable/btn_logout"
+        		android:text="Get Profile Data"
+        		android:layout_marginTop="30dip"
+        		android:layout_gravity="center_horizontal"
+        		android:visibility="gone"/>
+    
+    <!-- Button to show access tokens -->
+    <Button android:id="@+id/btn_show_access_tokens"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="Show Access Tokens"
+        		android:layout_marginTop="30dip"
+        		android:layout_gravity="center_horizontal"
+        		android:visibility="gone"/>
+    
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright 2013 Dmitriy Tarasov
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ScreenContent.Vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Section"
+            android:layout_weight="1"
+            android:text="@string/output_x_title"/>
+
+        <TextView
+            style="@style/Section"
+            android:layout_weight="1"
+            android:text="@string/output_y_title"/>
+
+        <TextView
+            style="@style/Section"
+            android:layout_weight="1"
+            android:text="@string/aspect_x_title"/>
+
+        <TextView
+            style="@style/Section"
+            android:layout_weight="1"
+            android:text="@string/aspect_y_title"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            style="@style/Row"
+            android:id="@+id/output_x"
+            android:layout_weight="1"
+            android:inputType="number"/>
+
+        <EditText
+            style="@style/Row"
+            android:id="@+id/output_y"
+            android:layout_weight="1"
+            android:inputType="number"/>
+
+        <EditText
+            style="@style/Row"
+            android:id="@+id/aspect_x"
+            android:layout_weight="1"
+            android:inputType="number"/>
+
+        <EditText
+            style="@style/Row"
+            android:id="@+id/aspect_y"
+            android:layout_weight="1"
+            android:inputType="number"/>
+
+    </LinearLayout>
+
+    <CheckBox
+        style="@style/Row"
+        android:id="@+id/scale"
+        android:text="@string/scale"/>
+
+    <LinearLayout
+        android:id="@+id/images_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/Section"
+            android:text="@string/source_image"
+            android:layout_weight="1"
+            android:id="@+id/textView"/>
+
+        <TextView
+            style="@style/Section"
+            android:text="@string/cropped_image"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/images"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/in_img"/>
+
+        <ImageView
+            android:id="@+id/out"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/out_img"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/crop"
+        android:text="@string/crop"
+        android:onClick="cropClick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>

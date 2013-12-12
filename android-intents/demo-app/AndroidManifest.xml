@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2013 Dmitriy Tarasov
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dmitriy.tarasov.android.intents.demo"
+    android:versionCode="110"
+    android:versionName="1.1.0">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="18"/>
+
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/DemoApp.Theme"
+        android:allowBackup="true">
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".open.OpenLinkActivity"
+            android:label="@string/open_link"/>
+
+        <activity
+            android:name=".open.OpenAudioActivity"
+            android:label="@string/open_audio"/>
+
+        <activity
+            android:name=".open.OpenVideoActivity"
+            android:label="@string/open_video"/>
+
+        <activity
+            android:name=".open.OpenImageActivity"
+            android:label="@string/open_image"/>
+
+        <activity
+            android:name=".open.OpenTextActivity"
+            android:label="@string/open_text"/>
+
+        <activity
+            android:name=".open.OpenPlayStoreActivity"
+            android:label="@string/open_play_store"/>
+
+        <activity
+            android:name=".pick.PickFileActivity"
+            android:label="@string/pick_file"/>
+
+        <activity
+            android:name=".pick.PickContactActivity"
+            android:label="@string/pick_contact"/>
+
+        <activity
+            android:name=".pick.PickImageActivity"
+            android:label="@string/pick_image"/>
+
+        <activity
+            android:name=".show.ShowLocationActivity"
+            android:label="@string/show_location"/>
+
+        <activity
+            android:name=".show.ShowLocationServicesActivity"
+            android:label="@string/show_location_services"/>
+
+        <activity
+            android:name=".show.ShowStreetViewActivity"
+            android:label="@string/show_street_view"/>
+
+        <activity
+            android:name=".send.SendSmsActivity"
+            android:label="@string/send_sms"/>
+
+        <activity
+            android:name=".send.SendEmailActivity"
+            android:label="@string/send_email"/>
+
+        <activity
+            android:name=".other.FindLocationActivity"
+            android:label="@string/find_location"/>
+
+        <activity
+            android:name=".other.ShareTextActivity"
+            android:label="@string/share_text"/>
+
+        <activity
+            android:name=".other.CapturePhotoActivity"
+            android:label="@string/capture_photo"/>
+
+        <activity
+            android:name=".other.CropImageActivity"
+            android:label="@string/crop_image"/>
+
+        <activity
+            android:name=".other.CallPhoneActivity"
+            android:label="@string/call_phone"/>
+
+        <activity
+            android:name=".other.DialPhoneActivity"
+            android:label="@string/dial_phone"/>
+
+    </application>
+</manifest> 

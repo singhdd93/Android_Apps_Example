@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#00FF07" >
+
+    <TextView
+        android:id="@+id/textView_display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text=""
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="30sp"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <ToggleButton
+        android:id="@+id/togglePlayPause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textOn="Pause"
+        android:textOff="Play" />
+
+    <ImageView
+        android:id="@+id/imageView_display"
+        android:contentDescription="@string/imageView_conDescp"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:id="@+id/back_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/back" />
+
+</LinearLayout>

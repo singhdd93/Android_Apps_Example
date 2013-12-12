@@ -1,0 +1,89 @@
+Hello, this is a tutorial introducing the ActionBar that was introduced in Android 3.0. It is a menu bar that is positioned at the top of the screen and is used as a replacement for the title bar. Google is really pushing developers to use ActionBars and move away from using the hardware menu button.
+
+To get started, create a new project called ActionBarTutorial, with a MainActivity ,and a target version of 4.0.3 or 3.0.
+
+First we have to edit the Manifest to change the theme. Change the application part of the manifest to look like this.
+[code]
+<application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo" >
+[/code]
+
+Now for the MainActivity. The only thing that should be new is in the onCreate method.
+[code]
+public class MainActivity extends Activity {
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        
+        // gets the activity's default ActionBar
+        ActionBar actionBar = getActionBar();
+        actionBar.show();
+        
+        // set the app icon as an action to go home
+        // we are home so we don't need it
+        // actionBar.setDisplayHomeAsUpEnabled(true);
+        
+    }
+    
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+    	// use an inflater to populate the ActionBar with items
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main, menu);
+        return true;
+    }
+    
+    @Override
+  	public boolean onOptionsItemSelected(MenuItem item){
+    	// same as using a normal menu
+    	switch(item.getItemId()) {
+    	case R.id.item_refresh:
+    		makeToast("Refreshing...");
+    		break;
+    	case R.id.item_save:
+    		makeToast("Saving...");
+    		break;
+    	}
+    	
+  		return true;
+  	}
+    
+    public void makeToast(String message) {
+    	// with jam obviously
+    	Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
+    }
+    
+}
+[/code]
+
+The menu xml file:
+[code]
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item
+		android:id="@+id/item_refresh"
+		android:icon="@drawable/ic_menu_refresh"
+		android:title="Refresh"
+		android:showAsAction="ifRoom|withText" />
+	
+	<item
+		android:id="@+id/item_save"
+		android:icon="@drawable/ic_menu_save"
+		android:title="Save"
+		android:showAsAction="ifRoom|withText" />
+</menu>
+[/code]
+This is just a normal menu xml. The only thing that might be new is the last line of each item. This line just says, if there is enough room, the title will be shown. (The drawables can be found at the [url="https://dl-ssl.google.com/android/design/Android_Design_Icons_20120229.zip"]Design Guidlines site[/url])
+
+Now run it on a Honeycomb or ICS emulator and behold the action bar. Easy, right?
+
+[spoiler]Wrong... Well sort of wrong. It is easy when dealing with API versions 11 and up. However, because the previous versions do not include the action bar,you have to use a workaround to get it to work for them.
+[/spoiler]
+
+So now we have a few options. We can write our own action bar code, like Google does(see ActionBarCompat in your sdk samples folder). Or we can use libraries. For ease of use, we will use a person's repository, [url="https://github.com/johannilsson/android-actionbar"]Android-ActionBar[/url]. Download the source from there and follow the instructions linked in his readme.
+
+Welcome back!

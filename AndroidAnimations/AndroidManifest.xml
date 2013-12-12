@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.androidhive.androidanimations"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="info.androidhive.androidanimations.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="info.androidhive.androidanimations.FadeInActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.FadeOutActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.CrossfadeActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.BlinkActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.ZoomInActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.ZoomOutActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.RotateActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.MoveActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.SlideUpActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.SlideDownActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.BounceActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.SequentialActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="info.androidhive.androidanimations.TogetherActivity"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>
