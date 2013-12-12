@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SMS Passing</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="sms_types">
+        <item>Funny</item>
+        <item>Jokes</item>
+        <item>Flirt</item>
+    </string-array>
+    
+    <string-array name="sms_list1">
+        <item>This is sms 1</item>
+        <item>This is sms 2</item>
+        <item>This is sms 3</item>
+        <item>This is sms 4</item>
+    </string-array>
+    
+    <string-array name="detailed_sms_list1">
+        <item>This is sms 1 in detail</item>
+        <item>This is sms 2 in detail</item>
+        <item>This is sms 3 in detail</item>
+        <item>This is sms 4 in detail</item>
+    </string-array>
+    <string-array name="sms_list2">
+        <item>This is joke 1</item>
+        <item>This is joke 2</item>
+        <item>This is joke 3</item>
+        <item>This is joke 4</item>
+        </string-array>
+        
+    
+     <string-array name="detailed_sms_list2">
+        <item>This is joke 1 in detail</item>
+        <item>This is joke 2 in detail</item>
+        <item>This is joke 3 in detail</item>
+        <item>This is joke 4 in detail</item>
+        </string-array>
+        
+        <string-array name="sms_list3" >
+            <item>This is SMS 1</item>
+            <item>This is SMS 2</item>
+            <item>This is SMS 3</item>
+            <item>This is SMS 4</item>
+            <item>This is SMS 5</item>
+            <item>This is SMS 6</item>
+    </string-array>
+    
+        <string-array name="detailed_sms_list3" >
+            <item>This is SMS 1 in detail</item>
+            <item>This is SMS 2 in detail</item>
+            <item>This is SMS 3 in detail</item>
+            <item>This is SMS 4 in detail</item>
+            <item>This is SMS 5 in detail</item>
+            <item>This is SMS 6 in detail</item>
+    </string-array>        
+
+</resources>

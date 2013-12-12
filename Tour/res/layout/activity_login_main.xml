@@ -1,0 +1,89 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg" 
+    android:padding="10sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".LoginMainActivity" >
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/userNameEditText"
+            android:layout_alignRight="@+id/userNameEditText"
+            android:layout_below="@+id/userNameEditText"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_bg"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="8dp" />
+
+        <Spinner
+            android:id="@+id/UserType"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_alignLeft="@+id/passwordEditText"
+            android:layout_alignRight="@+id/passwordEditText"
+            android:layout_below="@+id/passwordEditText"
+            android:layout_marginBottom="20sp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/text_bg" />
+
+        <Button
+            android:id="@+id/signInButton"
+            style="@style/ButtonText"
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/UserType"
+            android:layout_below="@+id/UserType"
+            android:background="@drawable/color_button"
+            android:onClick="login"
+            android:text="Sign In" 
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/quitButton"
+            style="@style/ButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/signInButton"
+            android:layout_alignBottom="@+id/signInButton"
+            android:layout_alignRight="@+id/UserType"
+            android:layout_toRightOf="@+id/signInButton"
+            android:background="@drawable/color_button"
+            android:layout_marginBottom="40sp"
+            android:text="Quit" 
+            android:textStyle="bold"
+            android:onClick="quit"/>
+
+        <EditText
+            android:id="@+id/userNameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewLoginIcon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:background="@drawable/text_bg"
+            android:ems="12"
+            android:hint="UserName"
+            android:padding="8dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageView
+            android:id="@+id/imageViewLoginIcon"
+            android:layout_width="130sp"
+            android:layout_height="130sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8sp"
+            android:src="@drawable/login_icon" />
+    </RelativeLayout>
+
+</ScrollView>

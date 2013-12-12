@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- action bar -->
+    <dimen name="action_button_min_width">56dp</dimen>
+        
+    <!-- sliding menu -->
+    <dimen name="slidingmenu_shadow_width">15dp</dimen>
+    <dimen name="slidingmenu_offset">60dp</dimen>
+
+</resources>

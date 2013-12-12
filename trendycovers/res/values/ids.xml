@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="RelativeLayout1">false</item>
+    <item type="id" name="header">false</item>
+    <item type="id" name="webView">false</item>
+    <item type="id" name="tV1">false</item>
+    <item type="id" name="pB1">false</item>
+    <item type="id" name="layout_root">false</item>
+    <item type="id" name="image">false</item>
+    <item type="id" name="text">false</item>
+    <item type="id" name="search_button">false</item>
+    <item type="id" name="back_button">false</item>
+    <item type="id" name="title">false</item>
+    <item type="id" name="ImageView01">false</item>
+    <item type="id" name="homes">false</item>
+    <item type="id" name="refresh">false</item>
+    <item type="id" name="back">false</item>
+    <item type="id" name="help">false</item>
+    <item type="id" name="about">false</item>
+    <item type="id" name="exit">false</item>
+</resources>

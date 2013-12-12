@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Style of main screen -->
+    
+    <style name="CustomTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarItemBackground">@drawable/ab_selectable_background_main</item>
+        <item name="android:actionBarStyle">@style/CustomActionBar</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/listitem_background</item>
+    </style>
+
+    <style name="CustomActionBar" parent="android:style/Widget.Holo.ActionBar">
+         <item name="android:background">@drawable/ab_transparent_main</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleTextStyle</item>
+    </style>
+    
+    <style name="MyActionBarTitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    </style>  
+
+</resources>

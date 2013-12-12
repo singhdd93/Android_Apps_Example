@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple_middle">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout 
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1">
+            <com.facebook.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                facebook:confirm_logout="false"
+                facebook:fetch_user_info="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                    android:id="@+id/greeting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Text"
+                    android:gravity="center"
+                    android:layout_toRightOf="@id/login_button"
+                    android:textColor="#fff"
+                    android:textSize="18sp"/>
+        </RelativeLayout>
+
+    <Button 
+    android:id="@+id/post"
+    android:layout_width="0dp"
+    android:layout_height="42dp"
+    android:layout_weight="0.6"
+    android:layout_marginLeft="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/button_post"
+    android:layout_marginRight="10dp"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:text="UPLOAD COVER"/>
+    </LinearLayout>
+<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pager"
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1" />
+
+<LinearLayout 
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp">
+<Button 
+    android:id="@+id/downloadSave"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_post"
+    android:layout_marginLeft="10dp"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:layout_marginRight="10dp"
+    android:minHeight="45dp"
+    android:text="Save"/>
+<Button 
+    android:id="@+id/setToWallpaper"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_post"
+    android:layout_marginLeft="10dp"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:layout_marginRight="10dp"
+    android:minHeight="45dp"
+    android:text="Set Wallpaper"/>
+</LinearLayout>
+
+
+<com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         ads:adUnitId="a151e93cc53531e"
+                         ads:adSize="SMART_BANNER"
+                         android:layout_gravity="center_horizontal"
+                         ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID"
+                         ads:loadAdOnCreate="true"/>
+
+
+</LinearLayout>
+

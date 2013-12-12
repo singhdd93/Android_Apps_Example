@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="wrap_content"
+   android:orientation="vertical"
+   android:background="@color/purple_dark">
+   
+    <TextView
+       android:id="@+id/slidingmenu_section_title"
+       style="?android:attr/listSeparatorTextViewStyle"
+       android:layout_width="fill_parent"
+       android:layout_height="55dp"
+       android:text="Section"
+       android:textSize="21sp"
+       android:paddingTop="7dp"
+       android:paddingBottom="7dp"
+       android:paddingLeft="20dp"
+       android:background="@color/purple_dark"
+       android:textColor="#33B5E5"/>
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/header_lineb"
+        android:layout_above="@id/slidingmenu_section_title"
+        android:layout_marginBottom="2px"
+        android:layout_alignBottom="@id/slidingmenu_section_title"/>
+   
+</RelativeLayout>

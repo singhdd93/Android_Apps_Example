@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!--
+                             <TextView
+			                android:id="@+id/UsrId"
+			                android:layout_width="wrap_content"
+			                android:layout_height="wrap_content"
+			                android:paddingBottom="2dip"
+			                android:paddingTop="6dip"
+			                android:text="Id: "
+			                android:padding="4sp" />
+            -->
+
+
+            <!-- First Name Label -->
+
+            <TextView
+                android:id="@+id/first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Name: "
+                android:textColor="#dc6800"
+                android:textSize="16sp"
+                android:textStyle="bold" >
+            </TextView>
+            
+            <!-- Last Name Label -->
+
+            <TextView
+                android:id="@+id/last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="#dc6800"
+                android:textSize="16sp"
+                android:textStyle="bold" >
+            </TextView>
+        </LinearLayout>
+
+        <!-- Address label -->
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dip"
+            android:textColor="#acacac" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

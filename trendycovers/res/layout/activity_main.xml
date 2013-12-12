@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:orientation="vertical" 
+    android:id="@id/RelativeLayout1" 
+    android:background="#ffffffff" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <include 
+        android:id="@id/header" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        layout="@layout/header" />
+    
+    <WebView 
+        android:id="@id/webView" 
+        android:scrollbars="none" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:layout_below="@id/header" 
+        android:layout_alignParentLeft="true" />
+    
+    <TextView 
+        android:textAppearance="?android:textAppearanceSmall" 
+        android:textColor="#ff444444" 
+        android:id="@id/tV1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:text="Loading . . ." 
+        android:layout_below="@id/pB1" 
+        android:layout_centerHorizontal="true" />
+    
+    <ProgressBar 
+        android:id="@id/pB1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true" 
+        android:layout_centerVertical="true" 
+        style="?android:attr/progressBarStyleSmall" />
+    
+</RelativeLayout>

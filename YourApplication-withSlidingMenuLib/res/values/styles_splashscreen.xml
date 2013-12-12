@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Splash" parent="android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/Animations.SplashScreen</item>
+    </style>
+
+    <style name="Animations" parent="@android:Animation" />
+
+    <style name="Animations.SplashScreen">
+        <item name="android:windowEnterAnimation">@anim/appear</item>
+        <item name="android:windowExitAnimation">@anim/disappear</item>
+    </style>
+    
+</resources>

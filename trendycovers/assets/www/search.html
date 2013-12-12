@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search Facebook Covers</title>
+
+<link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> 
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+
+</head>
+<body >
+<div class="bigbox">
+
+<div style="padding:10px;">
+
+<script type="text/javascript">
+
+    function form_submitted()
+    {   
+        var new_url = "http://m.trendycovers.com/search.php?tag=" + encodeURIComponent(document.getElementById('searchfield').value.replace(/ /gi, "_"));
+        window.location = new_url;
+        return false;
+    }
+
+</script>
+
+<form id="searchform"  onsubmit="return form_submitted()">
+<p><input type="text" class="searchbox" id="searchfield" onfocus="this.value='';this.style.color='black'" value="Search Covers" name="tag" value="" />
+<input type="submit"  class="searchbox_submit" value="Search" />
+</p>
+</form></div>
+
+
+</div>
+</body>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Your App Idea</string>
+    
+   	<string name="splashscreen_text">Loading application</string>
+    <string name="splashscreen_label">Loading</string>
+
+    <string name="preferences_label">Preferences</string>
+    
+    <string name="menuitem_refresh">Refresh</string>
+    <string name="menuitem_preferences">Settings</string>
+    <string name="menuitem_quit">Quit</string>
+    
+    <string name="confirm_quit">Are you sure you want to quit ?</string>
+    
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    
+    <string name="error_retrievingdata">Error retrieving data</string>
+    
+    <!-- For sample -->
+    
+    <string name="mainmenu_button1">List/Detail (Fragment)</string>
+    <string name="mainmenu_button2">Airport (AsyncTask)</string>
+
+    <string name="no_friends">No friends</string>
+    <string name="friend_name_label">Name :</string>
+    <string name="friend_job_label">Job :</string>   
+    
+    <string name="eula_title">End User License Agreement</string>
+    <string name="eula_accept">Accept</string>
+    <string name="eula_refuse">Refuse</string>
+    <string name="eula_close">Close</string>
+       
+    <string name="airport_title">Arrivals to Paris</string>
+    <string name="airport_altitude">Alt: %1$sm</string>
+    <string name="airport_speed">Speed: %1$skm/h</string>
+    <string name="airport_eta">Eta: %1$s</string>
+    <string name="airport_rest_url">http://www.flightradar24.com/AirportInfoService.php?airport={airport}&amp;type={mode}</string>
+</resources>

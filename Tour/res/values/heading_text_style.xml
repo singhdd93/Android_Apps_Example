@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="heading_text_style">
+    <item name="android:paddingLeft">4dp</item>
+    <item name="android:paddingBottom">4dp</item>
+    <item name="android:textColor">#424242</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:shadowColor">#D8D8D8</item>
+    <item name="android:shadowDx">4</item>
+    <item name="android:shadowDy">4</item>
+    <item name="android:shadowRadius">1</item>
+  </style>
+</resources>

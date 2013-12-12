@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tour</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="bg">#e7e2e8</color>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <string name="title_activity_main_tab_view">MainTabViewActivity</string>
+    <string name="hello_world">Under Development</string>
+    <string name="title_activity_tour_main">TourMainActivity</string>
+    <string name="title_activity_tab2">Tab2</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_tab3">Tab3</string>
+    <string name="title_activity_tab4">Tab4</string>
+    <string name="title_activity_tour_entry">TourEntryActivity</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_paymet__customer_to_catch__expense">Paymet_CustomerToCatch_Expense</string>
+    <string name="title_activity_expense_detail_level_tab_view">ExpenseDetailLevelTabView</string>
+    <string name="title_activity_customer_to_catch__tab">CustomerToCatch_Tab</string>
+
+</resources>

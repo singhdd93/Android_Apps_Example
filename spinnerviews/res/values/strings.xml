@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">fourth</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string-array name="abc">
+        <item>Aman</item>
+        <item>Amrit</item>
+        <item>Aseem</item>
+        <item>Bhavneet</item>
+        <item>Daman</item>
+        <item>Harman</item>
+        <item>Sanjam</item>
+        <item>Jasbir</item>
+    </string-array>
+
+</resources>

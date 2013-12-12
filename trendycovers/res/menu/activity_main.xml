@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu panelColorBackground="@android:color/black"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_home" android:id="@id/homes" android:title="Home" />
+    <item android:icon="@drawable/ic_menu_refresh" android:id="@id/refresh" android:title="Refresh" />
+    <item android:icon="@drawable/ic_menu_back" android:id="@id/back" android:title="Back" />
+    <item android:icon="@drawable/ic_menu_help" android:id="@id/help" android:title="Help" />
+    <item android:icon="@drawable/ic_menu_info_details" android:id="@id/about" android:title="About" />
+    <item android:icon="@drawable/ic_menu_exit" android:id="@id/exit" android:title="Exit" />
+</menu>

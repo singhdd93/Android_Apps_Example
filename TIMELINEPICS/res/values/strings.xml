@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FB TIMLINE PICS</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="about">Here at FBCOOLCOVERS.com we provide best facebook covers for your profiles. You ll find best designed Facebook covers here. Thats why fbcoolcovers.com is your best companion for Facebook Timeline covers. You can browse through the categories and get the FB Cover for your profile. There are plenty of self designed Cool Covers and you will get daily new covers here. So fbcoolcovers is best stop for you to find your FB Cover Photos. Dont forget to like us on Facebook and share this with your friends</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="ok">OK</string>
+    <string name="hello_user">Hello %1$s!</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted \'%1$s\'.\nPost ID: %2$s</string>
+    <string name="error">Error</string>
+    <string name="status_update">Updating status for %1$s at %2$s</string>
+    <string name="photo_post">Photo Post</string>
+    <string name="exception">Exception: %1$s</string>
+    <string name="app_id">592502680792312</string>
+    <!-- Where to store the wallpapers (just the folder name) -->
+    <string name="config_wallpaper_sdcard_dl_location">FBTIMELINEPICS</string>
+
+    <!-- Directory to download wallpapers to on external storage. Leave blank for "/sdcard/" -->
+    <string name="config_wallpaper_download_loc"></string>
+</resources>

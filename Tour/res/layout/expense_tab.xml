@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/heading_textView"
+            style="@style/heading_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Tour Expense"
+            android:textSize="42sp" />
+
+        <TableLayout
+            android:id="@+id/tableLayoutStudentInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heading_textView"
+            android:layout_margin="10dp" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="4sp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textViewCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.06"
+                        android:text="City:"
+                        android:textColor="#2E2E2E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textViewCityValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="#424242"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#8296A3" />
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textViewDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.27"
+                        android:text="Date:"
+                        android:textColor="#2E2E2E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textViewDateValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text=""
+                        android:textColor="#424242"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#8296A3" />
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textViewHotel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Hotel:"
+                        android:textColor="#2E2E2E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/textViewHotelValue"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/text_bg"
+                        android:hint="Enter Hotel Name"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:padding="8dp"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#8296A3" />
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="5sp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textViewHotelPhoneNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Hotel Phone No:"
+                        android:textColor="#2E2E2E"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:gravity="left"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/textViewHotelMobNo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/text_bg"
+                        android:hint="Enter Hotel Phone No"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:padding="8dp"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <View
+                android:layout_height="1dip"
+                android:background="#8296A3" />
+        </TableLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/tableLayoutStudentInfo"
+            android:padding="2sp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:id="@+id/Tour_Expense_List_Detail_Tbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:collapseColumns="5sp"
+                    android:padding="1sp"
+                    android:stretchColumns="0,1,2,3" >
+                </TableLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Tour_Expense_List_Detail_Tbl" >
+
+                    <Button
+                        android:id="@+id/saveButton"
+                        style="@style/ButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/color_button"
+                        android:onClick="SaveData"
+                        android:text="Save"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/blank_centered_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" 
+                        android:text="              "
+                        android:paddingLeft="6sp"
+                        android:paddingRight="6sp">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/textViewSec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/blank_centered_text"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/textViewTotalAmtVal"
+                        style="@style/ButtonText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/textViewSec"
+                        android:text="Total Amount: "
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#2E2E2E"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

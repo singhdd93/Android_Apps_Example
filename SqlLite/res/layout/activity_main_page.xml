@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPageActivity" >
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:text="Add New User"
+        android:onClick="addUser" />
+
+    <Button
+        android:id="@+id/showBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addBtn"
+        android:layout_marginTop="15dp"
+        android:text="Show User (IUD is inside this activity class comentet)"
+        android:onClick="showUser" />
+
+    <Button
+        android:id="@+id/showBtnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/showBtn"
+        android:layout_marginTop="15dp"
+        android:text="User Info in a List"
+        android:onClick="showList" />
+
+    <Button
+        android:id="@+id/showBtnSpiner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+		android:layout_below="@+id/showBtnList"
+        android:layout_marginTop="15dp"
+        android:text="User Info in a Spiner"
+        android:onClick="showSpiner" />
+
+    showSpiner
+
+</RelativeLayout>

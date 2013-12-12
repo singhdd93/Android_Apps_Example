@@ -1,0 +1,12 @@
+
+/target
+/bin
+/gen
+/.classpath
+/.project
+/.settings
+/old
+/.metadata
+
+/res/drawable-mdpi/Thumbs.db
+/lib

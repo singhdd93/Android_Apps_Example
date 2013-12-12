@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyThemeForTab" parent="@android:style/Theme.Light">
+        <item name="android:tabWidgetStyle">@style/LightTabWidget</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="LightTabWidget" parent="@android:style/Widget.TabWidget">
+
+        <!-- set textColor to red, so you can verify that it applied. -->
+        <!-- <item name="android:textColor">#f00</item> -->
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+</resources>
